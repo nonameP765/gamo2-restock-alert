@@ -17,3 +17,7 @@ jobs:
         run: yarn
       - name: Run script
         run: yarn start
+        env:
+          SENDER_GMAIL_USER: ${{ secrets.SENDER_GMAIL_USER }}
+          SENDER_GMAIL_PASSWORD: ${{ secrets.SENDER_GMAIL_PASSWORD }}
+          TARGET_GMAIL_USER: ${{ secrets.TARGET_GMAIL_USER }}
