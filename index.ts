@@ -5,6 +5,8 @@ import * as process from 'process';
 const GAMO2_PRODUCT_URL = 'https://www.gamo2.com/en/index.php?dispatch=products.view&product_id=';
 const { SENDER_GMAIL_USER, SENDER_GMAIL_PASSWORD, TARGET_GMAIL_USER } = process.env;
 
+console.log(process.env);
+
 if (!SENDER_GMAIL_USER || !SENDER_GMAIL_PASSWORD || !TARGET_GMAIL_USER) {
   throw new Error('SENDER_GMAIL_USER and SENDER_GMAIL_PASSWORD and TARGET_GMAIL_USER must be set');
 }
