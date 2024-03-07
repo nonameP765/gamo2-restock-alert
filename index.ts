@@ -6,7 +6,7 @@ const GAMO2_PRODUCT_URL = 'https://www.gamo2.com/en/index.php?dispatch=products.
 const { SENDER_GMAIL_USER, SENDER_GMAIL_PASSWORD, TARGET_GMAIL_USER } = process.env;
 
 if (!SENDER_GMAIL_USER || !SENDER_GMAIL_PASSWORD || !TARGET_GMAIL_USER) {
-  throw new Error('GMAIL_USER and GMAIL_PASSWORD must be set');
+  throw new Error('SENDER_GMAIL_USER and SENDER_GMAIL_PASSWORD and TARGET_GMAIL_USER must be set');
 }
 
 type SearchItem = { productId: number; name: string };
