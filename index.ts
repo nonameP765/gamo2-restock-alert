@@ -57,6 +57,7 @@ async function sendEmail({ productId, name }: SearchItem) {
           await page.waitForSelector('.qty-out-of-stock', {
             timeout: 5000
           });
+          console.log(`${item.name} is out of stock`);
         } catch (e) {
           await sendEmail(item);
         }
