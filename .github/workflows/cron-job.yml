@@ -2,7 +2,8 @@ name: Gamo2 Cron Job
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/3 * * * *'
+  workflow_dispatch:
 
 
 env:
